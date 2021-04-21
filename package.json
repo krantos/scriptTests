@@ -4,7 +4,8 @@
   "description": "Scrips to tests funcionality or injection",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "lint": "yarn eslint ."
   },
   "repository": {
     "type": "git",
