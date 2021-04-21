@@ -16,11 +16,28 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}--${{ hashFiles('**/package-lock.json'
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         env:
           NODE_ENV: dev
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn
-      - run: yarn lint
+
+      - name: Install Dependencies
+        run: yarn
+
+      - name: Run Linter
+        run: yarn lint
