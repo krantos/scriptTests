@@ -4,6 +4,7 @@
   "description": "Scrips to tests funcionality or injection",
   "main": "index.js",
   "scripts": {
+    "prepare": "husky install",
     "test": "test",
     "lint": "yarn eslint ./"
   },
@@ -19,6 +20,7 @@
   "homepage": "https://github.com/krantos/scriptTests#readme",
   "devDependencies": {
     "eslint": "^7.24.0",
-    "eslint-plugin-react": "^7.23.2"
+    "eslint-plugin-react": "^7.23.2",
+    "husky": "^6.0.0"
   }
 }

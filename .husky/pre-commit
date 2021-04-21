@@ -1,0 +1,12 @@
+#!/bin/bash
+
+fileList=$(git diff --diff-filter=d --cached --name-only | grep -E '\.(js|jsx)$')
+if [ ${#fileList} -lt 1 ]; then
+    echo -e "You have no staged .js or .jsx files to lint\n"
+    exit
+fi
+yarn eslint ${fileList[*]} "$@"
+if [ $? -ne 0 ]; then
+    echo -e "\nPlease fix the above linting issues before committing.\n"
+    exit 1
+fi
