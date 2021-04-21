@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "lint": "yarn eslint ."
+    "lint": "yarn eslint ./"
   },
   "repository": {
     "type": "git",
