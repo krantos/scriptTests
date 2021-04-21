@@ -1,0 +1,26 @@
+{
+  "name": "scripttests",
+  "version": "1.0.0",
+  "description": "Scrips to tests funcionality or injection",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "test": "test",
+    "lint": "yarn eslint ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krantos/scriptTests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krantos/scriptTests/issues"
+  },
+  "homepage": "https://github.com/krantos/scriptTests#readme",
+  "devDependencies": {
+    "eslint": "^7.24.0",
+    "eslint-plugin-react": "^7.23.2",
+    "husky": "^6.0.0"
+  }
+}
