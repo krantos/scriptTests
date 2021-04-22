@@ -1,5 +1,8 @@
 {
   "name": "scripttests",
+  "engines": {
+        "node": "14.15.x"
+    },
   "version": "1.0.0",
   "description": "Scrips to tests funcionality or injection",
   "main": "index.js",
