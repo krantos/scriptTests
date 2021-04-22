@@ -40,7 +40,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install Dependencies
-        # if: steps.hCacheStep.outputs.cache-hit != 'true'
+        # install dependencies from the cache and new dependencies if there is any
         run: yarn install --prefer-offline --frozen-lockfile
 
       - name: Run Linter
