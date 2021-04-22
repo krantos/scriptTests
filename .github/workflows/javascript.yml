@@ -17,12 +17,12 @@ jobs:
         id: project-npm-version
         run: echo "::set-output name=version::$(node -p "require('./package.json').engines.node")"
 
-      - name: Use Node.js ${{ steps.project-npm-version.version }}
+      - name: Use Node.js ${{ steps.project-npm-version.outputs.version }}
         uses: actions/setup-node@v1
         env:
           NODE_ENV: dev
         with:
-          node-version: ${{ steps.project-npm-version.version }}
+          node-version: ${{ steps.project-npm-version.outputs.version }}
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
