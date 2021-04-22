@@ -40,7 +40,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install Dependencies
-        if: steps:hCacheStep.outputs.cache-hut != 'true'
+        if: steps.hCacheStep.outputs.cache-hut != 'true'
         run: yarn
 
       - name: Run Linter
