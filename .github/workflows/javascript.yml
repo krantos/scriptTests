@@ -17,7 +17,7 @@ on:
   #     - 'src/javascript/**'
 
 jobs:
-  lint:
+  jsLint:
     runs-on: ubuntu-latest
 
     steps:
