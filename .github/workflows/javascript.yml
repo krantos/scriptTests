@@ -6,15 +6,15 @@ on:
       - 'master'
       - 'development'
       - '@jp/development'
-      paths:
-        - 'src/javascript/**'
+    paths:
+      - 'src/javascript/**'
   pull_request:
     branches:
       - 'master'
       - 'development'
       - '@jp/development'
-      paths:
-        - 'src/javascript/**'
+    paths:
+      - 'src/javascript/**'
 
 jobs:
   lint:
