@@ -3,16 +3,16 @@ name: javscript lint
 on:
   push:
     branches:
-      - master
-      - development
-      - @jp/development
+      - 'master'
+      - 'development'
+      - '@jp/development'
       paths:
         - 'src/javascript/**'
   pull_request:
     branches:
-      - master
-      - development
-      - @jp/development
+      - 'master'
+      - 'development'
+      - '@jp/development'
       paths:
         - 'src/javascript/**'
 
