@@ -18,7 +18,7 @@ If not, check the [Husky troubleshot documentation](https://typicode.github.io/h
 
 # Added Github Actions
 
-Inside of the folder `.github/workflows` there is a `javascriptLint.yml` file that contains all the configuration to run the Linter for .js and jsx over each PR and Push over the *development* branch.
+Inside of the folder `.github/workflows` there is a `javascriptLint.yml` file that contains all the configuration to run the Linter for changes made over the src/javascript folder over each PR and Push over the *development* branch.
 
 The `javascriptLint.yml` contains:
  * Setups a Linux machine.
